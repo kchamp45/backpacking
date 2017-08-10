@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Pack your Bag!{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/app.css'>
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="/bags">See All Bags</a></li>
+    <li role="presentation"><a href="/bags/new">Add a New Bag</a></li>
+</ul>
+<div class="container">
+    <!--begin main template-->
+    <div class="page-header">
+          <h1>Welcome to "Pack-Your-Bag" website! </h1>
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"><a href="/bags/delete">DELETE ALL BAGS</a></p>
+        </div>
+    </footer>
+    </body>
+    </html>
+{{/block}}

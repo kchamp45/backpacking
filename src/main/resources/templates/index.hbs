@@ -1,0 +1,22 @@
+{{#partial "content"}}
+
+    <h1>List of Bags!</h1>
+
+    {{#if backpackings}}
+        {{#each backpackings }}
+         <div class="emphasized well">
+            <p>Backpack {{id}}:</p>
+               <ul>
+                   <li>{{activity}}</li>
+                   <li>Created At: {{createdAt}}</li>
+                    <li>{{item}}</li>
+               </ul>
+            <p>{{ name }} <a href="/backpacking/{{id}}">read more...</a></p>
+         </div>
+        {{/each}}
+    {{else}}
+        <p>No bag added!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
