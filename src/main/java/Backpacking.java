@@ -21,7 +21,7 @@ public class Backpacking {
         this.id = instances.size();
         items = new ArrayList<Item>();
     }
-
+    //Getters
     public String getActivity() {
         return activity;
     }
@@ -49,7 +49,7 @@ public class Backpacking {
     public List<Item> getItems() {
         return items;
     }
-
+    //Setters
     public void addItem(Item item){
         items.add(item);
     }

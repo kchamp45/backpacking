@@ -86,4 +86,5 @@ public class BackpackingTest {
         backpacking.addItem(item);
         assertTrue(backpacking.getItems().contains(item));
     }
+
 }
