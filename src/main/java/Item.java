@@ -21,9 +21,6 @@ public class Item {
         iId = instances.size();
     }
 
-    public String getName() {
-        return name;
-    }
 
     public static ArrayList<Item> getAll() {
         return instances;
@@ -39,6 +36,21 @@ public class Item {
 
     public static Item findById(int id) {
         return instances.get(id - 1);
+    }
+
+    public void update(String name, int cost, int weight, String brand) {
+        this.name = name;
+        this.cost = cost;
+        this.weight = weight;
+        this.brand = brand;
+    }
+
+    public void deleteItem() {
+        instances.remove(iId-1);
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getCost() {
